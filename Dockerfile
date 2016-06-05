@@ -1,7 +1,7 @@
 FROM hegand/alpine:edge
 
 ENV PG_MAJOR=9.5 \
-    PG_VERSION=9.5.2-r1
+    PG_VERSION=9.5.3-r1
     
 ENV LANG en_US.utf8
 
