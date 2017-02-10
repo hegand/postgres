@@ -1,6 +1,6 @@
 # Postgres docker image based on alpine
 
-Minimal postgres image based on alpine linux (edge version) and the official postgres image (init script).
+Minimal postgres image based on alpine linux and the official postgres image (init script).
 
 ## Usage:
 
