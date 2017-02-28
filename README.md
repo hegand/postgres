@@ -10,11 +10,11 @@ Minimal postgres image based on alpine linux and the official postgres image (in
 
 ### Add master password:
 
-`docker run -d -e POSTGRES_PASSWORD=secretpass hegand/postgres
+`docker run -d -e POSTGRES_PASSWORD=secretpass hegand/postgres`
 
 ### Attach a volume:
 
-`docker run -d -e POSTGRES_PASSWORD=secretpass -v /local/dir:/var/lib/postgresql/data hegand/postgres
+`docker run -d -e POSTGRES_PASSWORD=secretpass -v /local/dir:/var/lib/postgresql/data hegand/postgres`
 
 ## ENV VARIABLES:
 ### POSTGRES_PASSWORD
