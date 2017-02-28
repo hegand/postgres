@@ -40,6 +40,10 @@ if [ "$1" = 'postgres' ]; then
 		fi
 
 		{ echo; echo "host all all 0.0.0.0/0 $authMethod"; } >> "$PGDATA/pg_hba.conf"
+		
+		if [ ! -z "$POSTGRES_LISTEN_ADDRESSES" ]; then
+			sed -i "s/#listen_addresses = 'localhost'/listen_addresses = '${POSTGRES_LISTEN_ADDRESSES}'/"  "$PGDATA/postgresql.conf"
+		fi
 
 		# internal start of server in order to allow set-up using psql-client		
 		# does not listen on external TCP/IP and waits until start finishes
